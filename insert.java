@@ -17,17 +17,19 @@ public class insert{
         for(int i=0;i<n;i++){
             int temp=a[i];
             int j=i;
-            while(j>0 && a[j-1]>a[i]){
+            while(j>0 && a[j-1]>temp){
                 a[j]=a[j-1];
                 j--;
             }
+        
             a[j]=temp;
+        }
                     for(int i=0;i<n;i++){
             System.out.print(a[i]+"\t");
         }
         System.out.println();
             
-        }
+        
 
      }
 }
